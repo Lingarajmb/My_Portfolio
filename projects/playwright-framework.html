@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Playwright Automation Framework | Lingaraj Belagali</title>
+
+    <link rel="stylesheet" href="../css/project.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+CASE STUDY HERO
+========================= -->
+
+    <section class="case-hero">
+
+        <div class="container">
+
+            <a href="../projects.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Projects
+
+            </a>
+
+            <div class="hero-grid">
+
+                <!-- LEFT -->
+
+                <div class="hero-left">
+
+                    <span class="project-label">
+
+                        AUTOMATION FRAMEWORK
+
+                    </span>
+
+                    <h1>
+
+                        Playwright Automation Framework
+
+                    </h1>
+
+                    <p class="hero-desc">
+
+                        A scalable automation testing framework built using Playwright,
+                        JavaScript and the Page Object Model (POM). The framework
+                        supports reusable components, HTML reporting, cross-browser
+                        testing, and maintainable automation architecture.
+
+                    </p>
+
+                    <div class="hero-tags">
+
+                        <span>Playwright</span>
+
+                        <span>JavaScript</span>
+
+                        <span>POM</span>
+
+                        <span>HTML Reports</span>
+
+                        <span>Git</span>
+
+                        <span>VS Code</span>
+
+                    </div>
+
+                    <div class="hero-buttons">
+
+                        <a href="https://youtube.com/" target="_blank" class="btn-red">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                            Watch Demo
+
+                        </a>
+
+                        <a href="https://github.com/" target="_blank" class="btn-dark">
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="hero-right">
+
+                    <img src="../assets/screenshots/playwright/framework.png" alt="Framework Screenshot">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        PROJECT OVERVIEW
+======================================-->
+
+    <section class="project-overview">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>PROJECT OVERVIEW</span>
+
+                <h2>Building a Scalable Automation Framework</h2>
+
+            </div>
+
+            <div class="overview-grid">
+
+                <!-- LEFT -->
+
+                <div class="overview-content">
+
+                    <p>
+
+                        This project demonstrates the development of a reusable
+                        automation testing framework using Playwright with
+                        JavaScript. The framework follows the Page Object Model
+                        (POM) design pattern to improve maintainability,
+                        readability, and scalability.
+
+                    </p>
+
+                    <p>
+
+                        It automates the TodoMVC application by validating
+                        core user workflows such as adding, editing,
+                        completing, and deleting tasks while generating
+                        detailed HTML execution reports.
+
+                    </p>
+
+                    <div class="framework-features">
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Page Object Model</span>
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Reusable Components</span>
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>HTML Reports</span>
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Cross-Browser Testing</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="overview-stats">
+
+                    <div class="overview-card">
+
+                        <h3>25+</h3>
+
+                        <p>Automated Test Cases</p>
+
+                    </div>
+
+                    <div class="overview-card">
+
+                        <h3>6</h3>
+
+                        <p>Page Objects</p>
+
+                    </div>
+
+                    <div class="overview-card">
+
+                        <h3>3 min</h3>
+
+                        <p>Execution Time</p>
+
+                    </div>
+
+                    <div class="overview-card">
+
+                        <h3>100%</h3>
+
+                        <p>HTML Reporting</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        FRAMEWORK ARCHITECTURE
+======================================-->
+
+    <section class="architecture">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>FRAMEWORK DESIGN</span>
+
+                <h2>Automation Framework Architecture</h2>
+
+                <p>
+
+                    The framework is designed using the Page Object Model (POM),
+                    separating page objects, test cases, utilities, and configuration
+                    files to improve scalability and maintainability.
+
+                </p>
+
+            </div>
+
+            <div class="architecture-grid">
+
+                <!-- LEFT -->
+
+                <div class="folder-structure">
+
+                    <pre>
+playwright-framework/
+
+├── pages/
+├── tests/
+├── utils/
+├── fixtures/
+├── reports/
+├── screenshots/
+├── playwright.config.js
+├── package.json
+└── README.md
+</pre>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="architecture-content">
+
+                    <h3>Framework Highlights</h3>
+
+                    <ul>
+
+                        <li>✔ Page Object Model (POM)</li>
+
+                        <li>✔ Reusable Utility Methods</li>
+
+                        <li>✔ Centralized Configuration</li>
+
+                        <li>✔ HTML Execution Reports</li>
+
+                        <li>✔ Cross-Browser Testing</li>
+
+                        <li>✔ Scalable Folder Structure</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        AUTOMATION FLOW
+======================================-->
+
+    <section class="automation-flow">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>AUTOMATION FLOW</span>
+
+                <h2>Framework Execution Workflow</h2>
+
+                <p>
+
+                    Every test execution follows a structured workflow,
+                    ensuring maintainability, reusability, and accurate reporting.
+
+                </p>
+
+            </div>
+
+            <div class="flow-container">
+
+                <div class="flow-box">
+
+                    <i class="fa-solid fa-file-code"></i>
+
+                    <h3>Test File</h3>
+
+                    <p>
+
+                        Executes test scenarios.
+
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="flow-box">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <h3>Page Object</h3>
+
+                    <p>
+
+                        Reusable page methods.
+
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="flow-box">
+
+                    <i class="fa-solid fa-crosshairs"></i>
+
+                    <h3>Locator</h3>
+
+                    <p>
+
+                        Finds UI elements.
+
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="flow-box">
+
+                    <i class="fa-solid fa-check-double"></i>
+
+                    <h3>Assertion</h3>
+
+                    <p>
+
+                        Validates expected result.
+
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+
+                    ➜
+
+                </div>
+
+                <div class="flow-box">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>HTML Report</h3>
+
+                    <p>
+
+                        Generates execution report.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        TEST SCENARIOS
+======================================-->
+
+    <section class="test-scenarios">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>TEST SCENARIOS</span>
+
+                <h2>Automation Test Coverage</h2>
+
+                <p>
+
+                    The framework automates the core business workflows
+                    of the TodoMVC application, ensuring stability,
+                    regression coverage, and functional correctness.
+
+                </p>
+
+            </div>
+
+            <div class="scenario-grid">
+
+                <!-- Scenario 1 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                    <h3>Add New Todo</h3>
+
+                    <p>
+
+                        Verify users can create a new task successfully
+                        and the task appears in the list.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 2 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                    </div>
+
+                    <h3>Edit Existing Todo</h3>
+
+                    <p>
+
+                        Validate users can modify existing tasks
+                        without affecting other records.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 3 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+
+                    <h3>Delete Todo</h3>
+
+                    <p>
+
+                        Verify completed tasks can be removed
+                        and the UI updates correctly.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 4 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-check-double"></i>
+
+                    </div>
+
+                    <h3>Complete Todo</h3>
+
+                    <p>
+
+                        Validate completed tasks display
+                        the correct completed state.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 5 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-filter"></i>
+
+                    </div>
+
+                    <h3>Filter Active</h3>
+
+                    <p>
+
+                        Ensure only active tasks are displayed
+                        when Active filter is selected.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 6 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                    </div>
+
+                    <h3>Filter Completed</h3>
+
+                    <p>
+
+                        Validate only completed tasks are displayed
+                        using the Completed filter.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 7 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-broom"></i>
+
+                    </div>
+
+                    <h3>Clear Completed</h3>
+
+                    <p>
+
+                        Verify completed tasks are permanently removed
+                        using the Clear Completed option.
+
+                    </p>
+
+                </div>
+
+                <!-- Scenario 8 -->
+
+                <div class="scenario-card">
+
+                    <div class="scenario-icon">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <h3>UI Validation</h3>
+
+                    <p>
+
+                        Validate labels, counters,
+                        filters and task visibility
+                        throughout execution.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        SCREENSHOT GALLERY
+======================================-->
+
+    <section class="gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>PROJECT GALLERY</span>
+
+                <h2>Framework & Execution Screenshots</h2>
+
+                <p>
+
+                    A visual walkthrough of the automation framework,
+                    application under test, execution process, and reports.
+
+                </p>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <!-- Screenshot 1 -->
+
+                <div class="gallery-card">
+
+                    <img src="../assets/screenshots/playwright/application.png" alt="TodoMVC Application">
+
+                    <div class="gallery-content">
+
+                        <h3>Application Under Test</h3>
+
+                        <p>
+
+                            TodoMVC application used for automation
+                            testing and end-to-end validation.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Screenshot 2 -->
+
+                <div class="gallery-card">
+
+                    <img src="../assets/screenshots/playwright/framework.png" alt="Framework Structure">
+
+                    <div class="gallery-content">
+
+                        <h3>Framework Structure</h3>
+
+                        <p>
+
+                            Organized project using the Page Object Model
+                            with reusable utilities and configuration files.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Screenshot 3 -->
+
+                <div class="gallery-card">
+
+                    <img src="../assets/screenshots/playwright/execution.png" alt="Execution">
+
+                    <div class="gallery-content">
+
+                        <h3>Test Execution</h3>
+
+                        <p>
+
+                            Playwright test execution from the terminal
+                            showing automated test results.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Screenshot 4 -->
+
+                <div class="gallery-card">
+
+                    <img src="../assets/screenshots/playwright/report.png" alt="HTML Report">
+
+                    <div class="gallery-content">
+
+                        <h3>HTML Execution Report</h3>
+
+                        <p>
+
+                            Interactive Playwright HTML report displaying
+                            passed, failed and execution details.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        DEMO & SOURCE CODE
+======================================-->
+
+    <section class="demo-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>DEMO & SOURCE CODE</span>
+
+                <h2>Project Demo & Repository</h2>
+
+                <p>
+
+                    Watch the automation framework in action and explore the
+                    source code used to build the project.
+
+                </p>
+
+            </div>
+
+            <div class="demo-grid">
+
+                <!-- Demo -->
+
+                <div class="demo-card">
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    <h3>Watch Demo</h3>
+
+                    <p>
+
+                        Complete walkthrough of the Playwright Automation
+                        Framework with execution and reporting.
+
+                    </p>
+
+                    <a href="https://youtube.com/YOUR_VIDEO" target="_blank" class="btn-red">
+
+                        Watch on YouTube
+
+                    </a>
+
+                </div>
+
+                <!-- GitHub -->
+
+                <div class="demo-card">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <h3>Source Code</h3>
+
+                    <p>
+
+                        Explore the project structure,
+                        reusable components,
+                        and automation scripts.
+
+                    </p>
+
+                    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" class="btn-dark">
+
+                        View Repository
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        KEY ACHIEVEMENTS
+======================================-->
+
+    <section class="achievements">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>PROJECT HIGHLIGHTS</span>
+
+                <h2>Key Achievements</h2>
+
+            </div>
+
+            <div class="achievement-grid">
+
+                <div class="achievement-card">
+
+                    <h3>Reusable Framework</h3>
+
+                    <p>
+
+                        Designed a scalable Playwright framework using
+                        Page Object Model for easy maintenance.
+
+                    </p>
+
+                </div>
+
+                <div class="achievement-card">
+
+                    <h3>Automation Coverage</h3>
+
+                    <p>
+
+                        Automated core TodoMVC workflows covering
+                        CRUD operations and UI validations.
+
+                    </p>
+
+                </div>
+
+                <div class="achievement-card">
+
+                    <h3>Execution Reports</h3>
+
+                    <p>
+
+                        Generated interactive HTML reports for
+                        easy result analysis.
+
+                    </p>
+
+                </div>
+
+                <div class="achievement-card">
+
+                    <h3>Maintainable Code</h3>
+
+                    <p>
+
+                        Centralized locators and reusable utilities
+                        reduced duplicate code.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+        LESSONS LEARNED
+======================================-->
+
+    <section class="lessons">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>LEARNING OUTCOMES</span>
+
+                <h2>Lessons Learned</h2>
+
+            </div>
+
+            <div class="lesson-card">
+
+                <ul>
+
+                    <li>Improved framework design using the Page Object Model.</li>
+
+                    <li>Learned to build reusable automation components.</li>
+
+                    <li>Strengthened Playwright automation skills.</li>
+
+                    <li>Implemented maintainable folder structures.</li>
+
+                    <li>Generated professional HTML execution reports.</li>
+
+                    <li>Enhanced debugging and troubleshooting techniques.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
