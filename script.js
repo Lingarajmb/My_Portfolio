@@ -287,3 +287,38 @@ window.addEventListener("scroll", () => {
 
 });
 
+
+//=========================================
+// Mobile Menu
+//=========================================
+
+const menuToggle = document.getElementById("menuToggle");
+
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+    menuToggle.innerHTML = navbar.classList.contains("active")
+
+        ? '<i class="fas fa-times"></i>'
+
+        : '<i class="fas fa-bars"></i>';
+
+});
+
+// Close menu after clicking link
+
+document.querySelectorAll(".navbar a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+    });
+
+});
+
