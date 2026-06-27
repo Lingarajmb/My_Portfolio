@@ -288,37 +288,27 @@ window.addEventListener("scroll", () => {
 });
 
 
-//=========================================
-// Mobile Menu
-//=========================================
+
+
 
 const menuToggle = document.getElementById("menuToggle");
-
-const navbar = document.getElementById("navbar");
+const navbar = document.querySelector(".navbar");
 
 menuToggle.addEventListener("click", () => {
 
     navbar.classList.toggle("active");
 
-    menuToggle.innerHTML = navbar.classList.contains("active")
+    const icon = menuToggle.querySelector("i");
 
-        ? '<i class="fas fa-times"></i>'
+    if (navbar.classList.contains("active")) {
 
-        : '<i class="fas fa-bars"></i>';
+        icon.className = "fa-solid fa-xmark";
 
-});
+    } else {
 
-// Close menu after clicking link
+        icon.className = "fa-solid fa-bars";
 
-document.querySelectorAll(".navbar a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navbar.classList.remove("active");
-
-        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-
-    });
+    }
 
 });
 
