@@ -1,0 +1,27 @@
+# ====================================================================
+# LINGARAJ QA PORTFOLIO - NETLIFY PRODUCTION CONFIGURATION
+# ====================================================================
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# SPA Fallback for client routing (Admin, Case Studies, Filters)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security & Cache Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
